@@ -4,7 +4,7 @@
 4. Extract the year from the column "date" and name it as "year"
 5. Categorize "year" into groups (2000-2006,2007-2010,2011-2022), and summarize the mean value of 'feature_4' by year groups.
 6. Identify missing values for "feature_2". Then, for each "id", impute the missings with the value from previous year, if not available, use the value from next year. Name the new feature "feature_2_impute". 
-7. Drop those observations with "feature_5" is "F"
+7. Report distribution of "feature_5" (uniques values and number of observations for each category). Drop those observations with "feature_5" is "F".
 8. Winsorize "feature_3" by limiting the extreme values to 1 percentile (left tail) and 99 percentile (right tail). Name it "feature_3_winsor". 
 9. Split the dataset into training and testing datasets using 70:30 split ratio
 10. Build a logistic regression on the training set to predict 'y' being (90+DPD) using "feature_1", "feature_2_impute", "feature_3_winsor". "feature_4" as independent variables.
